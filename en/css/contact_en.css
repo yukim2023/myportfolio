@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+#contact_form {
+  margin: 80px 50px 10%;
+}
+h2 {
+  text-align: center;
+}
+#contact_form img {
+  width: 76%;
+}
+.info {
+  text-align: left;
+  margin-bottom: 50px;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  line-height: 1.75;
+}
+#select,
+.c-form,
+.form-item {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.form-item,
+.c-form__item {
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.c-form__label,
+.c-form__input {
+  padding: 10px;
+}
+#select {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  -webkit-appearance: none;
+  appearance: none; /* デフォルトの矢印を非表示 */
+}
+.select-wrap {
+  display: inline-block;
+  position: relative;
+  width: 55%;
+  max-width: 770px;
+  margin: 0;
+}
+.select-wrap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #293850;
+  border-bottom: 2px solid #293850;
+  transform: translateY(-50%) rotate(45deg);
+}
+.option__input,
+.c-form__label {
+  width: 90%;
+}
+#select,
+.c-form__input {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f7f3f1;
+  border-radius: 4px;
+  border: none;
+}
+#select:focus-visible,
+.c-form__input:focus-visible {
+  outline: #fff auto 1px;
+}
+.c-form__required {
+  color: #fff;
+  font-size: small;
+  background-color: #a6b8c2;
+  border-radius: 4px;
+  padding: 5px 5px;
+  margin: 0 18px 0 0;
+}
+textarea.c-form__input {
+  height: 250px;
+  background-color: #f7f3f1;
+  border: none;
+}
+#no_robot .c-form__required {
+  margin-left: 0;
+}
+#no_robot {
+  height: 44px;
+  background-color: #f7f3f1;
+  border: none;
+}
+.c-form__submit {
+  text-align: end;
+  margin-bottom: 250px;
+  padding-top: 20px;
+}
+.c-form__submit button {
+  font-size: 17px;
+  color: #fff;
+  background-color: #c7d7dd;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 10px 60px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.c-form__submit button:hover {
+  color: #a6b8c2;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 769px) {
+  .c-form__item {
+    flex-wrap: nowrap;
+  }
+  .c-form__label {
+    width: 40%;
+  }
+  .c-form__input {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact_form {
+    margin: 60px 0 45px;
+  }
+  .info {
+    text-align: left;
+  }
+  .select-wrap {
+    width: 100%;
+  }
+  .c-form,
+  .form-item {
+    max-width: 100%;
+    height: auto;
+    margin: 0 30px;
+  }
+  .main p {
+    text-align: left;
+    display: inline;
+  }
+  #contact_form {
+    margin: 80px 0 50px 0;
+  }
+  #select {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+  }
+  .c-form__item {
+    flex-direction: row;
+  }
+  .c-form__label,
+  .c-form__input {
+    width: 100%;
+  }
+  textarea.c-form__input {
+    height: 200px;
+  }
+}

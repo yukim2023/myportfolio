@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #293850;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.5;
+}
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+/*ーーーーーー ↓ ヘッダー ↓ ーーーーーー*/
+.header_wrap {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #e9f1f4;
+}
+.header_logo {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 135px;
+  position: fixed;
+}
+.pc_nav ul {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin-right: 10px;
+  margin-left: 40%;
+}
+.pc_nav ul li {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.pc_nav ul li img {
+  width: 50px;
+  margin-right: 30px;
+}
+.main_visual img {
+  display: flex;
+  vertical-align: top;
+  margin-top: 60px;
+}
+
+/* ↓マウスカーソル↓ */
+html,
+body,
+a {
+  cursor: none;
+}
+.cursor {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #293850;
+  z-index: 1000;
+  transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+  transform: translate(0, 0);
+  pointer-events: none;
+}
+.cursor.cursor--hover {
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  color: #a6b8c2;
+}
+動き確認用ボタン .btn {
+  display: inline-block;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  color: #a6b8c2;
+  background-color: bluet;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+/* ↑マウスカーソル↑ */
+
+footer {
+  background-color: #a6b8c2;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+}
+footer p {
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+}
+.contact_button {
+  border: solid 2px #fff;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 48px;
+  padding: 20px 0;
+}
+.contact_button p {
+  color: #fff;
+  font-size: 20px;
+}
+.contact_button img {
+  width: 36px;
+  margin-right: 10px;
+}
+.instaglam_icon {
+  width: 30px;
+}
+.copyright {
+  font-size: 10px;
+  padding: 50px 0 30px 0;
+}
+.top_arrow {
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  width: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .sp_nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc_nav {
+    display: none;
+  }
+  .header_wrap {
+    height: 76px;
+  }
+  .main_visual img {
+    margin-top: 75px;
+    display: flex;
+    vertical-align: top;
+  }
+
+  /* ↓ フッター ↓ */
+  footer {
+    width: 100%;
+    padding-top: 50px;
+    cursor: pointer;
+  }
+  .contact_button {
+    width: 250px;
+    margin: 25px auto 40px;
+    padding: 20px 0;
+  }
+  .copyright {
+    padding: 20px 0 40px 0;
+  }
+  .top_arrow {
+    position: fixed;
+    right: 10px;
+    bottom: 340px;
+    width: 20px;
+  }
+
+  /* ↓ ハンバーガーメニュー ↓ */
+  .sp_btn {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    right: 13px;
+    top: 20px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .sp_btn span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: #293850;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .sp_btn span:nth-child(1) {
+    top: 10px;
+  }
+  .sp_btn span:nth-child(2) {
+    top: 20px;
+  }
+  .sp_btn span:nth-child(3) {
+    top: 30px;
+  }
+
+  /* ナビ開いてる時のボタン */
+  .sp_btn.active span:nth-child(1) {
+    top: 16px;
+    left: 6px;
+    background: #fff;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+
+  .sp_btn.active span:nth-child(2),
+  .sp_btn.active span:nth-child(3) {
+    top: 16px;
+    background: #fff;
+    -webkit-transform: rotate(-315deg);
+    -moz-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+  }
+
+  nav.sp_nav {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #293850;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
+
+  nav.sp_nav ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .sp_nav ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: 0.4s all;
+  }
+  nav.sp_nav ul li:nth-child(1) {
+    padding-top: 100px;
+  }
+  nav.sp_nav ul li:nth-last-child(3) {
+    padding-bottom: 0;
+    background-color: #c7d7dd;
+  }
+  nav.sp_nav ul li:nth-last-child(2) {
+    padding-top: 80px;
+  }
+  nav.sp_nav ul li:last-child {
+    margin-top: -60px;
+    padding-bottom: 200px;
+  }
+  nav.sp_nav ul li a.small {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  nav.sp_nav ul li:hover {
+    color: #c7d7dd;
+  }
+  nav.sp_nav ul li a {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    padding: 1em 0;
+    text-decoration: none;
+  }
+  .sp_nav ul li img {
+    width: 60px;
+  }
+
+  /* jQueryで付与・削除する？ */
+  nav.sp_nav.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* ↑ ここまでハンバーガー ↑ */
+}

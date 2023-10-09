@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuki Kimberのポートフォリオ、お問い合わせフォームです">
+    <title>CONTACT｜お問い合わせフォーム - ポートフォリオ Yuki Kimber</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="cursor" class="cursor"></div>
+    <a href="#" class="btn"></a>
+
+    <header>
+        <div class="header_wrap">
+            <h1 class="header_logo"><a href="./index.html"><img src="../images/logo@2x.png" alt="ロゴ"></a></h1>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="../en/contact_en.html"><img src="../images/globe_en.png" alt="英語ページへ"></a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="./contact.html#contact_form">Contact</a></li>
+                    <li><a href="../en/contact_en.html"><img src="../images/globe_sp.png" alt="英語ページへ"></a></li>
+                    <li><a class="small" href="../ja/contact.html">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main_visual">
+        <picture>
+            <source media="(max-width: 767px)" srcset="../images/contact_sp.jpg">
+            <img src="../images/contact.webp" alt="ラップトップPC">
+        </picture>
+    </div>
+
+    <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfYQ69VC9KQWIWx4CfFG2zAOIAih8uQI4Muzop4bDEZXgVxQw/formResponse"
+        method="post" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+        <div id="contact_form">
+            <h2><img src="../images/contact@2x.png" alt="お問い合わせフォーム"></h2>
+        </div>
+        <main>
+            <p class="info">お問い合わせ、デザイン等に関するご相談やご依頼は、下記のフォームにてご連絡ください。<br>
+                ３営業日以内にご返信させていただきます。</p>
+        </main>
+
+        <div class="c-form">
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-item">お問い合わせ項目<span class="c-form__required">必須</span></label>
+                <select id="select" name="entry.368708745">
+                    <option class="option__input" value="バナー作成">&nbsp;バナー作成</option>
+                    <option class="option__input" value="LP作成">LP作成</option>
+                    <option class="option__input" value="WEBページ作成">WEBページ作成</option>
+                    <option class="option__input" value="デザインのご相談">デザインのご相談</option>
+                    <option class="option__input" value="その他">その他</option>
+                </select>
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-company">会社名</label>
+                <input name="entry.1154542603" class="c-form__input" id="field_company" placeholder="" type="text"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-name">お名前<span class="c-form__required">必須</span></label>
+                <input name="entry.1438891546" class="c-form__input" id="field_name" placeholder="" type="text"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-mail">メールアドレス<span class="c-form__required">必須</span></label>
+                <input name="entry.1116419407" class="c-form__input" id="field_mail" placeholder="sample@gmail.com"
+                    type="email" required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-title">件名</label>
+                <input name="entry.2056611244" class="c-form__input" id="field_title" placeholder="" type="text"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-message">内容<span class="c-form__required">必須</span></label>
+                <textarea name="entry.216942296" class="c-form__input" id="field_message" placeholder=""></textarea>
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-robot">ロボットではありませんか？<span
+                        class="c-form__required">必須</span><br>回答欄に表示されている言葉をそのまま入力してください。</label>
+                <input name="entry.322127923" class="c-form__input" id="no_robot" placeholder="タスマニアデビル" type="text"
+                    required="required" pattern="タスマニアデビル" />
+            </div>
+            <div class="c-form__submit">
+                <button type="submit">送信する</button>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <p>お気軽にお問い合わせ・ご相談ください。</p>
+        <div class="contact_button">
+            <a href="./contact.html"><img src="../images/airplane@2x.png" alt="コンタクトボタン"></a>
+            <p><a href="./contact.html">Contact</a></p>
+        </div>
+        <img class="instaglam_icon" src="../images/instaglam@2x.png" alt="インスタグラムアイコン">
+        <p class="copyright">&copy;Yuki Kimber Portfolio</p>
+        <div class="top_arrow"><a href="#"><img src="../images/top_arrow@2x.png" alt="トップに戻るボタン"></a></div>
+    </footer>
+
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='thanks.html';}"></iframe>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

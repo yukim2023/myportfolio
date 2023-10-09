@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+#about_me {
+  margin: 150px 7% 200px 0;
+}
+h2 {
+  text-align: center;
+}
+h2 img {
+  width: 38%;
+}
+.myself {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 50px;
+}
+.my_pic {
+  width: 40%;
+  margin-left: 0;
+}
+.my_pic img {
+  width: 100%;
+}
+.skills_info {
+  display: block;
+  width: 60%;
+}
+.skills_info h3 {
+  border-left: 7px solid #a6b8c2;
+  padding: 0 8px;
+}
+#skills {
+  width: 22%;
+  min-width: 90px;
+}
+#expertise {
+  width: 30%;
+  min-width: 120px;
+}
+#skills,
+#expertise {
+  scroll-margin-top: 120px; /* 位置のズレを修正 */
+}
+.skills_info p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.my_name {
+  width: 38%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.my_name,
+.introduction {
+  margin-left: 7%;
+}
+.introduction p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+/* レスポンシブ */
+@media screen and (max-width: 767px) {
+  #about_me {
+    margin: 80px 30px 120px;
+  }
+  h2 img {
+    width: 70%;
+  }
+  .myself {
+    display: flex;
+    margin: 60px 0 0;
+    flex-direction: column-reverse;
+  }
+  .skills_info {
+    width: 100%;
+    margin: 0;
+  }
+  #skills {
+    width: 23%;
+    min-width: 90px;
+  }
+  #expertise {
+    width: 32%;
+    min-width: 120px;
+  }
+  .my_name {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .my_pic {
+    width: 70%;
+    margin: 0;
+  }
+  .introduction {
+    margin-left: 0;
+  }
+}

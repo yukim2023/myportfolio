@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+#works,
+#banner,
+#lp_design,
+#web_page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+h2 {
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 80px;
+}
+.my_works h2 img {
+  margin-bottom: 0;
+  width: 40%;
+}
+h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+.keywords {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.keywords li {
+  width: 110px;
+  height: 20px;
+  background: #f7f3f1;
+  border-radius: 9999px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 8px;
+  margin-right: 10px;
+}
+h4 {
+  font-size: 23px;
+  font-weight: bold;
+  border-left: 7px solid #a6b8c2;
+  padding: 0 8px;
+}
+/*ーーーーーー ↓ more 矢印 ↓ ーーーーーー*/
+.more {
+  text-align: right;
+  margin-bottom: 50px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.arrow {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  padding: 10px 30px 0 20px;
+  text-align: center;
+  color: #a6b8c2;
+  font-size: 16px;
+}
+.arrow::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: calc(50% + 5px);
+  right: 35px;
+  width: 30px;
+  height: 5px;
+  border-right: 2px solid #a6b8c2;
+  border-bottom: 1px solid #a6b8c2;
+  transform: skew(45deg);
+  transition: 0.3s;
+}
+.arrow:hover::after {
+  right: 20px;
+  width: 30px;
+}
+
+/*ーーーーーー ↓ スライダー ↓ ーーーーーー*/
+
+.slider img,
+.modal-open {
+  width: 80%;
+  margin: 0 auto;
+}
+.hairsalon,
+.mobile {
+  border: 0.5px solid #b3b3b3;
+}
+#banner,
+#lp_design,
+#web_page {
+  margin-bottom: 150px;
+}
+.slider .slick-dots {
+  bottom: -50px;
+}
+.slider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.slider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  text-indent: -9999px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+  outline: 0;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+.slider .slick-dots li button:before {
+  content: none;
+}
+.slider .slick-dots li:nth-child(1) button {
+  background: #f5d1c3;
+}
+.slider .slick-dots li:nth-child(2) button {
+  background: #a9b7ba;
+}
+.slider .slick-dots li:nth-child(3) button {
+  background: #c4d7d1;
+}
+.slider .slick-dots li:nth-child(4) button {
+  background: #b4b1a0;
+}
+.slider .slick-dots li:nth-child(5) button {
+  background: #e5dfd3;
+}
+.slider .slick-dots li button:hover,
+.full-screen-o .slick-dots li.slick-active button {
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+/*ーーーーーー ↓ モーダルウィンドウ ↓ ーーーーーー*/
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-out;
+  z-index: 99;
+}
+.modal-body {
+  margin-top: 80px;
+}
+.summary {
+  margin: 50px auto 0 10%;
+}
+.modal-content {
+  background: #fff;
+  text-align: left;
+  padding: 100px 30px;
+}
+.modal-txt li {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.8;
+  text-indent: -16px;
+  margin: 0 auto 20px 20px;
+}
+.responsive_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 700px;
+  margin-top: 80px;
+}
+.sp_img {
+  width: 18%;
+  border: 0.5px solid #b3b3b3;
+}
+.pc_img {
+  width: 77%;
+  border: 0.5px solid #b3b3b3;
+}
+.modal-container::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+/* モーダルのスクロールバーを非表示 */
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+.modal-control {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  margin: auto;
+}
+.modal-prev {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: translate(-50%) rotate(-135deg);
+}
+.modal-next {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: translateY(-50%) rotate(45deg);
+}
+.modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-body {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 700px;
+  width: 90%;
+}
+
+/* 閉じるボタン */
+.modal-close {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #7589a0;
+  transition: all 2s;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 22px;
+  background: #fff;
+}
+.modal-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.modal-close:hover {
+  transform: rotate(180deg);
+}
+
+.body {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 790px) {
+  /* モーダルの矢印 */
+  .modal-prev {
+    position: fixed;
+    top: 70px;
+    left: 12%;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #b3b3b3;
+    border-right: 3px solid #b3b3b3;
+  }
+  .modal-next {
+    position: fixed;
+    top: 82px;
+    right: 14%;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #b3b3b3;
+    border-right: 3px solid #b3b3b3;
+  }
+
+  .modal-control {
+    height: auto;
+    z-index: 99;
+  }
+
+  .summary {
+    margin: 50px 0 0 12%;
+    padding: 0 10px;
+  }
+  .summary {
+    margin: 50px 0 0;
+    padding: 0 10px;
+  }
+  .modal-content {
+    padding: 60px 10px;
+    margin-top: 30px;
+  }
+  .modal-close {
+    top: 12px;
+    right: -10px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #7589a0;
+    transition: all 2s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #works {
+    max-width: 100%;
+    margin: 0 30px;
+  }
+  #works h2 {
+    text-align: center;
+    margin: 150px auto 50px;
+  }
+  #works h2 img {
+    width: 72%;
+  }
+  .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #banner,
+  #lp_design,
+  #web_page {
+    margin-bottom: 100px;
+  }
+  .more {
+    margin-bottom: 20px;
+  }
+  h4 {
+    margin: 0;
+  }
+  #works {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

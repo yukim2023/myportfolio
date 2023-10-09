@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: "tangier", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+  margin-top: 130px;
+}
+main p {
+  font-size: 1em;
+  line-height: 3;
+  margin: 50px 10% 100px;
+}
+.thanks_pic img {
+  display: flex;
+  width: 100%;
+  margin: 100px 0 0;
+  vertical-align: bottom;
+}
+/* レスポンシブ */
+@media screen and (max-width: 767px) {
+  .thanks_pic {
+    width: 100%;
+    margin: 0;
+  }
+  .thanks_pic img {
+    vertical-align: bottom;
+  }
+  h2,
+  main p {
+    line-height: 1.8;
+  }
+  h2 {
+    text-align: center;
+    margin: 56px 60px 30px 30px;
+  }
+  main p {
+    margin: 0 60px 100px 30px;
+  }
+}

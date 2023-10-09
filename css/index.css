@@ -10,7 +10,7 @@ main p {
   text-align: center;
   font-size: 16px;
   line-height: 48px;
-  margin: 50px 30px 80px 30px;
+  margin: 50px 30px 80px;
 }
 
 /* もくじ */
@@ -322,7 +322,7 @@ main p {
   margin-top: 50px;
   margin-bottom: 120px;
 }
-ul::after {
+.next_page ul::after {
   content: "";
   display: block;
   clear: both;

@@ -184,11 +184,6 @@ main p {
   padding-right: 50px;
 }
 
-#workbook h3 img {
-  width: 40%;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 768px) {
   .sp_br {
     display: none; /*改行タグを無効に*/

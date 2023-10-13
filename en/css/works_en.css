@@ -17,11 +17,16 @@ h2 {
   margin-bottom: 0;
   width: 40%;
 }
-h3 {
+.category {
   text-align: center;
   font-size: 18px;
   font-weight: lighter;
   margin-bottom: 15px;
+}
+#banner,
+#lp_design,
+#web_page {
+  scroll-margin-top: 80px; /* 位置のズレを修正 */
 }
 .keywords {
   display: flex;
@@ -38,7 +43,7 @@ h3 {
   padding-top: 8px;
   margin-right: 10px;
 }
-h4 {
+h3 {
   font-size: 23px;
   font-weight: bold;
   border-left: 7px solid #a6b8c2;
@@ -47,7 +52,7 @@ h4 {
 /*ーーーーーー ↓ more 矢印 ↓ ーーーーーー*/
 .more {
   text-align: right;
-  margin-bottom: 50px;
+  margin: 0 50px 50px 0;
   font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 .arrow {
@@ -179,6 +184,11 @@ h4 {
   line-height: 1.8;
   text-indent: -16px;
   margin: 0 auto 20px 20px;
+}
+.left_border {
+  font-weight: bold;
+  border-left: 5px solid #a6b8c2;
+  padding-left: 3px;
 }
 .responsive_img {
   display: flex;
@@ -360,7 +370,7 @@ h4 {
   .more {
     margin-bottom: 20px;
   }
-  h4 {
+  h3 {
     margin: 0;
   }
   #works {

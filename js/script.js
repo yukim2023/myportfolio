@@ -23,7 +23,7 @@ for (var i = 0; i < link.length; i++) {
 
 // ↓モーダルウィンドウ
 $(function () {
-  var open = $(".slider li");
+  var open = $(".slider .slick-slide");
   var close = $(".modal-close"),
     container = $(".modal-container");
 

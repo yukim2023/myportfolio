@@ -13,7 +13,6 @@
 
 <body>
     <div id="cursor" class="cursor"></div>
-    <a href="#" class="btn"></a>
 
     <header>
         <div class="header_wrap">
@@ -71,7 +70,7 @@
                 <label class="c-form__label" for="field-item"><span class="c-form__required">Required</span>Inquiry
                     about</label>
                 <div class="select-wrap">
-                    <select id="select" name="entry.368708745">
+                    <select id="field-item" name="entry.368708745">
                         <option class="option__input" value="バナー作成">&nbsp;Banner</option>
                         <option class="option__input" value="LP作成">Landing page</option>
                         <option class="option__input" value="WEBページ作成">Website</option>
@@ -81,35 +80,35 @@
                 </div>
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-company">Company name</label>
+                <label class="c-form__label" for="field_company">Company name</label>
                 <input name="entry.1154542603" class="c-form__input" id="field_company" placeholder="" type="text"
                     required="required" />
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-name"><span class="c-form__required">Required</span>Name</label>
+                <label class="c-form__label" for="field_name"><span class="c-form__required">Required</span>Name</label>
                 <input name="entry.1438891546" class="c-form__input" id="field_name" placeholder="" type="text"
                     required="required" />
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-mail"><span class="c-form__required">Required</span>Mail
+                <label class="c-form__label" for="field_mail"><span class="c-form__required">Required</span>Mail
                     address</label>
                 <input name="entry.1116419407" class="c-form__input" id="field_mail" placeholder="sample@gmail.com"
                     type="email" required="required" />
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-title">Title</label>
+                <label class="c-form__label" for="field_title">Title</label>
                 <input name="entry.2056611244" class="c-form__input" id="field_title" placeholder="" type="text"
                     required="required" />
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-message"><span
+                <label class="c-form__label" for="field_message"><span
                         class="c-form__required">Required</span>Message</label>
                 <textarea name="entry.216942296" class="c-form__input" id="field_message" placeholder=""></textarea>
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-robot"><span class="c-form__required">Required</span>I'm not a
+                <label class="c-form__label" for="field_robot"><span class="c-form__required">Required</span>I'm not a
                     Robot.<br>Please fill in the letters indicated.</label>
-                <input name="entry.322127923" class="c-form__input" id="no_robot" placeholder="Tasmanian devil"
+                <input name="entry.322127923" class="c-form__input" id="field_robot" placeholder="Tasmanian devil"
                     type="text" required="required" pattern="Tasmanian devil" />
             </div>
             <div class="c-form__submit">
@@ -121,14 +120,14 @@
     <footer>
         <div class="contact_button">
             <a href="./contact_en.html"><img src="../images/airplane@2x.png" alt="Contact button"></a>
-            <p><a href="./contact_en.html">Contact me!</a></p>
+            <a href="./contact_en.html">Contact me!</a>
         </div>
         <img class="instaglam_icon" src="../images/instaglam@2x.png" alt="Instagram app icon">
-        <p class="copyright">&copy;Yuki Kimber Portfolio</p>
-        <div class="top_arrow"><a href="#"><img src="../images/top_arrow@2x.png" alt="Return to top"></a></div>
+        <p class="copyright"><small>&copy;Yuki Kimber Portfolio</small></p>
+        <a href="#" id="page-top">Page top</a>
     </footer>
 
-    <script type="text/javascript">
+    <script>
         var submitted = false;
     </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"

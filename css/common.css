@@ -107,20 +107,19 @@ a {
   opacity: 0.5;
   color: #a6b8c2;
 }
-動き確認用ボタン .btn {
+/*.btn {   動き確認用ボタン
   display: inline-block;
   min-width: 300px;
   margin: 20px;
   padding: 20px;
   color: #a6b8c2;
-  background-color: bluet;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-}
-/* ↑マウスカーソル↑ */
+}*/
 
+/* ↓フッター↓ */
 footer {
   background-color: #a6b8c2;
   text-align: center;
@@ -128,9 +127,9 @@ footer {
   margin: 0;
 }
 footer p {
-  color: #fff;
   font-size: 17px;
   text-align: center;
+  color: #fff;
 }
 .contact_button {
   border: solid 2px #fff;
@@ -141,7 +140,7 @@ footer p {
   margin: 35px auto 48px;
   padding: 20px 0;
 }
-.contact_button p {
+.contact_button a {
   color: #fff;
   font-size: 20px;
 }
@@ -153,14 +152,66 @@ footer p {
   width: 30px;
 }
 .copyright {
-  font-size: 10px;
+  color: #fff;
   padding: 50px 0 30px 0;
 }
-.top_arrow {
+
+/*TOPへ戻るボタン*/
+html {
+  scroll-behavior: smooth;
+}
+#page-top {
+  display: block;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #999;
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 80%;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #293850;
+  opacity: 0.5;
   position: fixed;
-  right: 30px;
-  bottom: 40px;
-  width: 32px;
+  bottom: 50px;
+  right: 20px;
+  z-index: 999;
+}
+#page-top::before {
+  content: "";
+  display: block;
+  border-top: 2px solid #b3b3b3;
+  border-right: 2px solid #b3b3b3;
+  width: 25%;
+  height: 25%;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+#page-top:hover {
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  #page-top {
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    opacity: 1;
+    border: none;
+    background: none;
+    bottom: 10px;
+    right: 10px;
+  }
+  #page-top::before {
+    bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -170,6 +221,9 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
+  #cursor {
+    display: none;
+  }
   .pc_nav {
     display: none;
   }
@@ -195,12 +249,6 @@ footer p {
   }
   .copyright {
     padding: 20px 0 40px 0;
-  }
-  .top_arrow {
-    position: fixed;
-    right: 10px;
-    bottom: 340px;
-    width: 20px;
   }
 
   /* ↓ ハンバーガーメニュー ↓ */

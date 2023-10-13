@@ -13,7 +13,6 @@
 
 <body>
     <div id="cursor" class="cursor"></div>
-    <a href="#" class="btn"></a>
 
     <header>
         <div class="header_wrap">
@@ -58,15 +57,14 @@
         <div id="contact_form">
             <h2><img src="../images/contact@2x.png" alt="お問い合わせフォーム"></h2>
         </div>
-        <main>
-            <p class="info">お問い合わせ、デザイン等に関するご相談やご依頼は、下記のフォームにてご連絡ください。<br>
-                ３営業日以内にご返信させていただきます。</p>
-        </main>
+
+        <p class="info">お問い合わせ、デザイン等に関するご相談やご依頼は、下記のフォームにてご連絡ください。<br>
+            ３営業日以内にご返信させていただきます。</p>
 
         <div class="c-form">
             <div class="c-form__item">
-                <label class="c-form__label" for="field-item">お問い合わせ項目<span class="c-form__required">必須</span></label>
-                <select id="select" name="entry.368708745">
+                <label class="c-form__label" for="field-item"><span class="c-form__required">必須</span>お問い合わせ項目</label>
+                <select id="field-item" name="entry.368708745">
                     <option class="option__input" value="バナー作成">&nbsp;バナー作成</option>
                     <option class="option__input" value="LP作成">LP作成</option>
                     <option class="option__input" value="WEBページ作成">WEBページ作成</option>
@@ -75,34 +73,34 @@
                 </select>
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-company">会社名</label>
+                <label class="c-form__label" for="field_company">会社名</label>
                 <input name="entry.1154542603" class="c-form__input" id="field_company" placeholder="" type="text"
-                    required="required" />
+                    required="required">
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-name">お名前<span class="c-form__required">必須</span></label>
+                <label class="c-form__label" for="field_name"><span class="c-form__required">必須</span>お名前</label>
                 <input name="entry.1438891546" class="c-form__input" id="field_name" placeholder="" type="text"
-                    required="required" />
+                    required="required">
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-mail">メールアドレス<span class="c-form__required">必須</span></label>
+                <label class="c-form__label" for="field_mail"><span class="c-form__required">必須</span>メールアドレス</label>
                 <input name="entry.1116419407" class="c-form__input" id="field_mail" placeholder="sample@gmail.com"
-                    type="email" required="required" />
+                    type="email" required="required">
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-title">件名</label>
+                <label class="c-form__label" for="field_title">件名</label>
                 <input name="entry.2056611244" class="c-form__input" id="field_title" placeholder="" type="text"
-                    required="required" />
+                    required="required">
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-message">内容<span class="c-form__required">必須</span></label>
+                <label class="c-form__label" for="field_message"><span class="c-form__required">必須</span>内容</label>
                 <textarea name="entry.216942296" class="c-form__input" id="field_message" placeholder=""></textarea>
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-robot">ロボットではありませんか？<span
-                        class="c-form__required">必須</span><br>回答欄に表示されている言葉をそのまま入力してください。</label>
-                <input name="entry.322127923" class="c-form__input" id="no_robot" placeholder="タスマニアデビル" type="text"
-                    required="required" pattern="タスマニアデビル" />
+                <label class="c-form__label" for="field_robot"><span
+                        class="c-form__required">必須</span>ロボットではありませんか？<br>回答欄に表示されている言葉をそのまま入力してください。</label>
+                <input name="entry.322127923" class="c-form__input" id="field_robot" placeholder="タスマニアデビル" type="text"
+                    required="required" pattern="タスマニアデビル">
             </div>
             <div class="c-form__submit">
                 <button type="submit">送信する</button>
@@ -113,15 +111,15 @@
     <footer>
         <p>お気軽にお問い合わせ・ご相談ください。</p>
         <div class="contact_button">
-            <a href="./contact.html"><img src="../images/airplane@2x.png" alt="コンタクトボタン"></a>
+            <a href="./contact.html"><img src="../images/airplane@2x.png" alt="送信ボタン"></a>
             <p><a href="./contact.html">Contact</a></p>
         </div>
         <img class="instaglam_icon" src="../images/instaglam@2x.png" alt="インスタグラムアイコン">
-        <p class="copyright">&copy;Yuki Kimber Portfolio</p>
-        <div class="top_arrow"><a href="#"><img src="../images/top_arrow@2x.png" alt="トップに戻るボタン"></a></div>
+        <p class="copyright"><small>&copy;Yuki Kimber Portfolio</small></p>
+        <a href="#" id="page-top">Page top</a>
     </footer>
 
-    <script type="text/javascript">
+    <script>
         var submitted = false;
     </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"

@@ -1,12 +1,12 @@
 @charset "utf-8";
-h2 img {
-  width: 45%;
+.catch_copy h2 img {
+  width: 60%;
 }
 .catch_copy {
   text-align: center;
   margin-top: 124px;
 }
-main p {
+.main p {
   text-align: center;
   font-size: 16px;
   line-height: 48px;
@@ -142,12 +142,12 @@ main p {
 #workbook {
   padding: 0 50px;
 }
-#services h3,
-#workbook h3 {
+#services h2,
+#workbook h2 {
   text-align: center;
   margin: 150px auto 80px auto;
 }
-#services h3 img {
+#services h2 img {
   width: 35%;
   margin: 0 auto;
 }
@@ -166,9 +166,9 @@ main p {
   width: 75%;
   padding-left: 30px;
 }
-#services h4 {
+h3 {
   font-size: 24px;
-  margin-top: 60px 0 28px 0;
+  margin: 30px 0;
   border-left: 7px solid #a6b8c2;
   padding: 0 8px;
 }
@@ -252,11 +252,11 @@ main p {
     display: none;
   }
 
-  #services h3 {
+  #services h2 {
     margin: 150px 0 20px;
   }
-  #services h3 img,
-  #workbook h3 img {
+  #services h2 img,
+  #workbook h2 img {
     width: 80%;
   }
   .direction,
@@ -279,7 +279,7 @@ main p {
     width: 100%;
     padding: 0px;
   }
-  #services h4 {
+  h3 {
     text-align: center;
     margin: 50px 0 30px;
     padding: 0;
@@ -293,8 +293,8 @@ main p {
 }
 
 @media screen and (max-width: 420px) {
-  #services h3 img,
-  #workbook h3 img {
+  #services h2 img,
+  #workbook h2 img {
     width: 100%;
   }
   .index_list li > span {
@@ -331,7 +331,6 @@ main p {
 @media screen and (max-width: 767px) {
   #page_turn {
     height: 390px !important;
-    background-color: none;
   }
 }
 @media screen and (min-width: 768px) {

@@ -2,19 +2,19 @@
 
 #about_me {
   max-width: 1000px;
-  margin: 150px 10% 200px;
+  margin: 50px 10% 200px;
 }
 h2 {
   text-align: center;
 }
 h2 img {
-  width: 38%;
+  width: 60%;
 }
 .myself {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px 0 50px;
+  margin: 50px 0 50px;
 }
 .my_pic {
   width: 50%;
@@ -27,16 +27,12 @@ h2 img {
   display: block;
   width: 50%;
 }
-.skills_info h3 {
-  border-left: 7px solid #a6b8c2;
-  padding: 0 8px;
-}
 #skills {
-  width: 22%;
+  width: 30%;
   min-width: 90px;
 }
 #expertise {
-  width: 30%;
+  width: 40%;
   min-width: 120px;
 }
 #skills,

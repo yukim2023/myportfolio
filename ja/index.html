@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ポートフォリオ Yuki Kimberのトップページです">
     <title>ポートフォリオ Yuki Kimber</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,7 +28,8 @@
                     <li><a href="./works.html">Works</a></li>
                     <li><a href="./about.html">About me</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="../en/index_en.html"><img src="../images/globe_en.png" alt="英語ページへ"></a></li>
+                    <li><a class="small" href="../en/index_en.html"><img src="../images/globe_en.png" alt="英語ページへ"></a>
+                    </li>
                 </ul>
             </nav>
             <div class="sp_btn">
@@ -55,7 +59,7 @@
 
     <div class="main">
         <div class="catch_copy">
-            <h2><img src="../images/catch.jpg" alt="伝えたいことはなんですか？"></h2>
+            <h2><img src="../images/top_subject.png" alt="伝えたいことはなんですか？"></h2>
         </div>
         <p>ホームページを訪れたユーザーがそのページをそのまま閲覧し続けたいと思うか、<br class="pc_br">
             他に移動するか判断する時間は、はじめの3秒で決まると言われています。<br>
@@ -137,11 +141,13 @@
         </div>
     </section>
 
-    <div id="workbook">
+    <section id="workbook">
+        <h2><img src="../images/my_works@2x.png" alt="サービス"></h2>
+
         <div class="turn" style="position: relative;">
             <div id="page_turn">
                 <div class="page">
-                    <img src="../images/cover.webp" alt="表紙">
+                    <img src="../images/bookcover.jpg" alt="表紙">
                 </div>
                 <div>
                     <img src="../images/page1.webp" alt="スマホのバナー広告">
@@ -168,29 +174,25 @@
                     <img src="../images/page8.webp" alt="カフェのウェブサイト">
                 </div>
             </div>
-            <ul class="next_page">
-                <!--<li>
-                    <span id="prevpage">Previous page</span>
-                </li>-->
-                <li>
-                    <span id="nextpage">ページをめくる</span>
-                </li>
-                <li>ページの角をクリックもしくはドラッグしてもページがめくれます。</li>
-            </ul>
+            <div class="next_page">
+                <p>ページの角をクリックもしくはドラッグすると、ページがめくれます。</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-
-    <footer>
+    <footer id="footer">
         <p>お気軽にお問い合わせ・ご相談ください。</p>
         <div class="contact_button">
             <a href="./contact.html"><img src="../images/airplane@2x.png" alt="送信ボタン"></a>
-            <p><a href="./contact.html">Contact</a></p>
+            <a href="./contact.html">Contact</a>
         </div>
         <img class="instaglam_icon" src="../images/instaglam@2x.png" alt="インスタグラムアイコン">
         <p class="copyright"><small>&copy;Yuki Kimber Portfolio</small></p>
-        <a href="#" id="page-top">Page top</a>
+        <p id="page-top"><a href="#">Page Top</a></p>
     </footer>
+
+
+    <script src="../js/script.js"></script>
 
     <script>
         $(function () {
@@ -199,8 +201,8 @@
                     {
                         elevation: 50, // 自動でページをめくったときの高さ
                         duration: 1000, // ページめくりのスピード(ms)
-                        gradients: true, // ページをめくるときの影->有効
-                        autoCenter: false, // 自動中央揃え->無効
+                        gradients: false, // ページをめくるときの影->有効
+                        autoCenter: true, // 自動中央揃え->無効
                         display: 'single',
                     }
                 );
@@ -209,7 +211,7 @@
                     {
                         elevation: 50, // 自動でページをめくったときの高さ
                         duration: 1000, // ページめくりのスピード(ms)
-                        gradients: true, // ページをめくるときの影->有効
+                        gradients: false, // ページをめくるときの影->有効
                         autoCenter: false, // 自動中央揃え
                     }
                 );
@@ -225,8 +227,6 @@
 
         });
     </script>
-
-    <script src="../js/script.js"></script>
 
 </body>
 

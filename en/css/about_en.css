@@ -8,7 +8,7 @@ h2 {
   text-align: center;
 }
 h2 img {
-  width: 38%;
+  width: 60%;
 }
 .myself {
   display: flex;
@@ -27,16 +27,12 @@ h2 img {
   display: block;
   width: 60%;
 }
-.skills_info h3 {
-  border-left: 7px solid #a6b8c2;
-  padding: 0 8px;
-}
 #skills {
-  width: 22%;
+  width: 30%;
   min-width: 90px;
 }
 #expertise {
-  width: 30%;
+  width: 40%;
   min-width: 120px;
 }
 #skills,
@@ -46,8 +42,8 @@ h2 img {
 .skills_info p {
   font-size: 1em;
   line-height: 1.5;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  padding-right: 30px;
 }
 .my_name {
   width: 38%;
@@ -56,12 +52,12 @@ h2 img {
 }
 .my_name,
 .introduction {
-  margin-left: 7%;
+  margin-left: 5%;
 }
 .introduction p {
   font-size: 1em;
   line-height: 1.5;
-  margin-top: 10px;
+  padding-right: 30px;
 }
 /* レスポンシブ */
 @media screen and (max-width: 767px) {

@@ -4,26 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Thanks page of Yuki Kimber's portfolio.">
-    <title>THANKS PAGE｜ Inquiry form submission completion page / Portfolio of Yuki Kimber</title>
+    <meta name="description" content="Thanks page. Portfolio of Yuki Kimber">
+    <title>THANKS PAGE ｜ Inquiry form submission completion page / Portfolio of Yuki Kimber</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png">
     <link rel="stylesheet" href="../en/css/common_en.css">
     <link rel="stylesheet" href="../en/css/thanks_en.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'peu7jiu',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
 </head>
 
 <body>
     <div id="cursor" class="cursor"></div>
-    <a href="#" class="btn"></a>
 
     <header>
         <div class="header_wrap">
@@ -64,15 +56,12 @@
         </picture>
     </div>
 
-    <main>
-        <h2>Thank you for your inquiry.</h2>
-        <p>I will contact you within 3 business days of receiving your enquirer. <br>An auto-reply confirmation
-            email
-            will be sent to the email address you entered. If you do not receive the email after a while, please
-            check
-            your spam folder. If you have specified a domain name, please make sure that you can receive emails from
-            @google.com.</p>
-    </main>
+    <h2><img src="../images/Thankyou.png" alt="Thank you for your inquiry."></h2>
+    <p class="thanks_msg">I will contact you within 3 business days of receiving your enquirer. An auto-reply
+        confirmation email will be sent to the email address you entered. If you do not receive the email after a while,
+        please check
+        your spam folder. If you have specified a domain name, please make sure that you can receive emails from
+        @google.com.</p>
 
     <div class="thanks_pic">
         <picture>
@@ -81,14 +70,14 @@
         </picture>
     </div>
 
-    <footer>
+    <footer id="footer">
         <div class="contact_button">
             <a href="./contact_en.html"><img src="../images/airplane@2x.png" alt="Contact button"></a>
             <a href="./contact_en.html">Contact me!</a>
         </div>
         <img class="instaglam_icon" src="../images/instaglam@2x.png" alt="Instagram app icon">
         <p class="copyright"><small>&copy;Yuki Kimber Portfolio</small></p>
-        <a href="#" id="page-top">Page top</a>
+        <p id="page-top"><a href="#">Page Top</a></p>
     </footer>
 
     <script src="../js/script.js"></script>

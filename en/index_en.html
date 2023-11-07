@@ -4,21 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home / Portfolio of Yuki Kimber">
-    <title> / Portfolio of Yuki Kimber</title>
+    <meta name="description" content="Home page / Portfolio of Yuki Kimber">
+    <title> Home page ｜ Portfolio of Yuki Kimber</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png">
     <link rel="stylesheet" href="../en/css/common_en.css">
     <link rel="stylesheet" href="../en/css/index_en.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'peu7jiu',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/turn.js"></script>
 </head>
 
 <body>
@@ -57,13 +52,14 @@
     <div class="main_visual">
         <picture>
             <source media="(max-width: 767px)" srcset="../images/top_main_sp.jpg">
-            <img src="../images/top_main.webp" alt="朝日の写真を撮る瞬間">
+            <img src="../images/top_main.webp" alt="Girl taking photo of sunrise">
         </picture>
     </div>
 
     <div class="main">
         <div class="catch_copy">
-            <h2>What is the message that you want to convey?</h2>
+            <h2><img src="../images/top_subject_eng.jpg" alt="What is the message that you want to convey?
+                "></h2>
         </div>
         <p>It is said that the time it takes a website visitor to decide whether they want to continue viewing the page
             or move on is determined in the first 3 seconds.
@@ -157,21 +153,92 @@
         </div>
     </section>
 
-    <div id="workbook">
-        <h2><img src="../images/my_works@2x.png" alt="my works"></h2>
-    </div>
+    <section id="workbook">
+        <h2><img src="../images/my_works@2x.png" alt="Services"></h2>
 
-    <footer>
+        <div class="turn" style="position: relative;">
+            <div id="page_turn">
+                <div class="page">
+                    <img src="../images/bookcover.jpg" alt="book cover">
+                </div>
+                <div>
+                    <img src="../images/page1_en.webp" alt="banner advertisement for a new plan of mobile phone">
+                </div>
+                <div>
+                    <img src="../images/page2_en.webp" alt="banner advertisement for travel portal site">
+                </div>
+                <div>
+                    <img src="../images/page3_en.webp" alt="banner advertisement for new burger menu - version 1">
+                </div>
+                <div>
+                    <img src="../images/page4_en.webp" alt="banner advertisement for new burger menu - version 2">
+                </div>
+                <div>
+                    <img src="../images/page5_en.webp" alt="banner advertisement for online web designer course">
+                </div>
+                <div>
+                    <img src="../images/page6_en.webp" alt="hair salon landing page">
+                </div>
+                <div>
+                    <img src="../images/page7_en.webp" alt="co-working space website">
+                </div>
+                <div>
+                    <img src="../images/page8_en.webp" alt="cafe website">
+                </div>
+            </div>
+            <div class="next_page">
+                <p>Click or drag a corner of the book to turn the page.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
         <div class="contact_button">
             <a href="./contact_en.html"><img src="../images/airplane@2x.png" alt="Contact button"></a>
             <a href="./contact_en.html">Contact me!</a>
         </div>
         <img class="instaglam_icon" src="../images/instaglam@2x.png" alt="Instagram app icon">
         <p class="copyright"><small>&copy;Yuki Kimber Portfolio</small></p>
-        <a href="#" id="page-top">Page top</a>
+        <p id="page-top"><a href="#">Page Top</a></p>
     </footer>
 
+
     <script src="../js/script.js"></script>
+
+    <script>
+        $(function () {
+            if (window.matchMedia('(max-width: 767px)').matches) {
+                $('#page_turn').turn(
+                    {
+                        elevation: 50, // 自動でページをめくったときの高さ
+                        duration: 1000, // ページめくりのスピード(ms)
+                        gradients: false, // ページをめくるときの影->有効
+                        autoCenter: true, // 自動中央揃え->無効
+                        display: 'single',
+                    }
+                );
+            } else if (window.matchMedia('(min-width:768px)').matches) {
+                $('#page_turn').turn(
+                    {
+                        elevation: 50, // 自動でページをめくったときの高さ
+                        duration: 1000, // ページめくりのスピード(ms)
+                        gradients: false, // ページをめくるときの影->有効
+                        autoCenter: false, // 自動中央揃え
+                    }
+                );
+            }
+
+            $('#prevpage').click(function () {
+                $('#page_turn').turn('previous');
+            });
+
+            $('#nextpage').click(function () {
+                $('#page_turn').turn('next');
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>

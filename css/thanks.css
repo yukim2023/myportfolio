@@ -14,8 +14,8 @@ h2 {
 .line_break {
   display: inline-block;
 }
-main p {
-  text-align: left;
+.thanks_msg {
+  text-align: center;
   font-size: 1em;
   line-height: 3;
   letter-spacing: 0.02em;
@@ -30,14 +30,14 @@ main p {
 /* レスポンシブ */
 @media screen and (max-width: 767px) {
   h2,
-  main p {
+  .thanks_msg {
     line-height: 1.8;
   }
   h2 {
     margin: 56px 60px 30px 30px;
     font-size: 1.5em;
   }
-  main p {
+  .thanks_word {
     margin: 0 60px 100px 30px;
   }
   .thanks_pic img {

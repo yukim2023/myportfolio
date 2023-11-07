@@ -49,11 +49,12 @@ img {
   right: 0;
   z-index: 10;
   background-color: #e9f1f4;
+  height: 60px;
 }
 .header_logo {
-  margin-left: 30px;
-  margin-top: 20px;
-  width: 135px;
+  margin-top: 8px;
+  margin-left: 10px;
+  width: 180px;
   position: fixed;
 }
 .pc_nav ul {
@@ -61,7 +62,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
   margin-right: 10px;
   margin-left: 40%;
 }
@@ -120,13 +120,14 @@ a {
 }*/
 
 /* ↓フッター↓ */
-footer {
+#footer {
   background-color: #a6b8c2;
+  vertical-align: center;
   text-align: center;
   padding-top: 100px;
   margin: 0;
 }
-footer p {
+#footer p {
   font-size: 17px;
   text-align: center;
   color: #fff;
@@ -156,31 +157,27 @@ footer p {
   padding: 50px 0 30px 0;
 }
 
-/*TOPへ戻るボタン*/
-html {
-  scroll-behavior: smooth;
-}
-#page-top {
-  display: block;
+/* ↓ Topへ戻るボタン ↓ */
+#page-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #999;
-  padding-top: 30px;
-  text-align: center;
+  padding-top: 15px;
   letter-spacing: -1px;
   font-size: 80%;
   text-decoration: none;
   border-radius: 50%;
   color: #293850;
   opacity: 0.5;
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
   z-index: 999;
+  transition: all 0.3s;
 }
-#page-top::before {
+#page-top a::before {
   content: "";
   display: block;
   border-top: 2px solid #b3b3b3;
@@ -194,23 +191,47 @@ html {
   position: absolute;
   transform: rotate(-45deg);
 }
-#page-top:hover {
+#page-top a:hover {
   opacity: 1;
 }
 
-@media (max-width: 750px) {
-  #page-top {
-    width: 40px;
-    height: 40px;
-    text-indent: -9999px;
-    opacity: 1;
-    border: none;
-    background: none;
-    bottom: 10px;
-    right: 10px;
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 20px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*上に上がる動き*/
+#page-top.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
   }
-  #page-top::before {
-    bottom: 0;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*下に下がる動き*/
+#page-top.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
   }
 }
 
@@ -237,7 +258,7 @@ html {
   }
 
   /* ↓ フッター ↓ */
-  footer {
+  #footer {
     width: 100%;
     padding-top: 50px;
     cursor: pointer;
@@ -251,7 +272,19 @@ html {
     padding: 20px 0 40px 0;
   }
 
-  /* ↓ ハンバーガーメニュー ↓ */
+  #page-top {
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    opacity: 1;
+    border: none;
+    background: none;
+    bottom: 10px;
+    right: 10px;
+  }
+  #page-top::before {
+    bottom: 0;
+  } /* ↓ ハンバーガーメニュー ↓ */
   .sp_btn {
     display: block;
     position: fixed;
@@ -293,7 +326,6 @@ html {
     -moz-transform: rotate(315deg);
     transform: rotate(315deg);
   }
-
   .sp_btn.active span:nth-child(2),
   .sp_btn.active span:nth-child(3) {
     top: 16px;
@@ -316,7 +348,6 @@ html {
     opacity: 0;
     transition: opacity 0.6s ease, visibility 0.6s ease;
   }
-
   nav.sp_nav ul {
     margin: 0 auto;
     padding: 0;
@@ -360,12 +391,8 @@ html {
   .sp_nav ul li img {
     width: 60px;
   }
-
-  /* jQueryで付与・削除する？ */
   nav.sp_nav.active {
     opacity: 1;
     visibility: visible;
   }
-
-  /* ↑ ここまでハンバーガー ↑ */
 }

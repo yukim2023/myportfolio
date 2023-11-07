@@ -1,16 +1,17 @@
 @charset "utf-8";
+
 .catch_copy h2 img {
   width: 60%;
 }
 .catch_copy {
   text-align: center;
-  margin-top: 124px;
+  margin-top: 200px;
 }
 .main p {
   text-align: center;
   font-size: 16px;
   line-height: 48px;
-  margin: 50px 30px 80px;
+  margin: 100px 30px 200px;
 }
 
 /* もくじ */
@@ -141,15 +142,21 @@
 #services,
 #workbook {
   padding: 0 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-#services h2,
-#workbook h2 {
+#services h2 {
   text-align: center;
-  margin: 150px auto 80px auto;
+  margin-top: 200px;
 }
 #services h2 img {
   width: 35%;
   margin: 0 auto;
+}
+#services p {
+  font-size: 16px;
+  line-height: 1.75;
+  padding-right: 50px;
 }
 .direction,
 .design,
@@ -172,10 +179,14 @@ h3 {
   border-left: 7px solid #a6b8c2;
   padding: 0 8px;
 }
-#services p {
-  font-size: 16px;
-  line-height: 1.75;
-  padding-right: 50px;
+#workbook h2 img {
+  width: 40%;
+  margin: 0 auto;
+}
+#workbook h2,
+#workbook h2 {
+  text-align: center;
+  margin-top: 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -307,25 +318,20 @@ h3 {
   max-width: 1000px;
   width: 100% !important;
   height: 500px;
-  margin: 200px auto 0;
+  margin: 50px auto 0;
 }
-.next_page ul {
-  text-align: center;
-  list-style: none;
+.next_page {
   width: 100%;
-  margin-bottom: 30px;
-}
-.next_page li {
   text-align: center;
-  width: 50%;
-  /* float: left;*/
-  margin-top: 50px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 250px;
 }
-.next_page ul::after {
-  content: "";
-  display: block;
-  clear: both;
+.next_page p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.next_page :last-child {
+  font-size: 15px;
 }
 
 @media screen and (max-width: 767px) {

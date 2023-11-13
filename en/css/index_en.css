@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-.catch_copy h2 img {
-  width: 90%;
+.catch_copy img {
+  width: 100%;
 }
 .catch_copy {
   text-align: center;
@@ -19,128 +19,6 @@
   margin: 100px 30px 200px;
 }
 
-/* もくじ */
-#table_of_contents {
-  position: relative;
-  z-index: 1;
-}
-#table_of_contents::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 50%;
-  height: 100%;
-  background: #f7f3f1;
-}
-.contents_inner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1038px;
-  margin: 0 auto;
-  padding: 124px 0;
-  background: #f7f3f1;
-  box-shadow: 5px 0px 9px #e5e5e5;
-  z-index: 2;
-}
-.index_circle {
-  display: flex;
-  font-size: 1rem;
-  text-align: center;
-  color: #293850;
-  margin-left: 26%;
-  margin-right: 37%;
-  gap: 8%;
-}
-.circle_1 {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: #efdad3;
-  text-align: center;
-  line-height: 70px;
-  font-size: 12px;
-  z-index: 2;
-}
-.circle_2 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: rgba(239, 218, 211, 0.8);
-  font-size: 12px;
-}
-.circle span {
-  position: absolute;
-  display: inline-block;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 70px;
-  text-align: center;
-}
-.index {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 0;
-  float: none;
-}
-.index_heading {
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  margin-left: 145px;
-  font-size: 21px;
-  letter-spacing: 15px;
-}
-.index_list {
-  display: flex;
-  flex-direction: row-reverse;
-  min-height: 450px;
-}
-.index_list li {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.index_list li::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 82%;
-  border-right: 2px dotted #293850;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.index_list li + li {
-  margin-right: 20px;
-}
-.index_list li > span {
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  background: #f7f3f1;
-  z-index: 2;
-  padding: 10px;
-}
-.index_list li > span > br {
-  display: none;
-}
-
-/* ------ */
 #services {
   scroll-margin-top: 100px; /* ズレを修正 */
 }
@@ -191,84 +69,25 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-  .sp_br,
   .sp420_br {
     display: none; /*改行タグを無効に*/
   }
 }
 
 @media screen and (max-width: 767px) {
-  .pc_br,
-  .sp420_br {
-    display: none; /*改行タグを無効に*/
-  }
   .catch_copy {
-    margin: 60px 8% 30px;
+    margin: 60px 10px 30px;
   }
   .main p {
     text-align: left;
     padding-bottom: 80px;
   }
-
-  .contents_inner {
-    display: block;
-    padding: 60px 0;
-    box-shadow: none;
-  }
-  .index {
-    display: block;
-    padding: 0 27px;
-  }
-  .index_heading {
-    writing-mode: horizontal-tb;
-    margin-left: 0;
-    margin-bottom: 60px;
-    text-align: center;
-    font-size: 21px;
-    letter-spacing: 0;
-  }
-  .index_list {
-    flex-direction: column;
-    min-height: auto;
-  }
-  .index_list li {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-  }
-  .index_list li::before {
-    display: none;
-  }
-  .index_list li + li {
-    margin-top: 24px;
-  }
-  .index_list li > span {
-    writing-mode: horizontal-tb;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-  .circle_1,
-  .circle_2 {
-    min-width: 100px;
-    height: auto;
-    border-radius: 99rem;
-    line-height: 1;
-    margin-right: 20px;
-    padding: 10px 0;
-  }
-  .index_list li > span > br {
-    display: block;
-  }
-  .index_list li a br {
-    display: none;
-  }
-
   h2 {
-    margin: 150px 0 20px;
+    margin: 100px 0 20px;
   }
   #services h2 img,
   #workbook h2 img {
-    width: 80%;
+    width: 60%;
   }
   .direction,
   .design,
@@ -296,6 +115,7 @@ h3 {
     padding: 0;
     border: none;
     font-size: 1.8em;
+    line-height: 1.5;
   }
   #services p {
     padding: 0px;
@@ -304,14 +124,12 @@ h3 {
 }
 
 @media screen and (max-width: 420px) {
-  .pc_br,
-  .sp_br {
-    display: none; /*改行タグを無効に*/
+  #services h2 img {
+    width: 80%;
   }
 
-  .sp420_br #services h2 img,
   #workbook h2 img {
-    width: 100%;
+    width: 90%;
   }
   .index_list li > span {
     font-size: 1em;
@@ -331,21 +149,156 @@ h3 {
   margin-top: 80px;
   margin-bottom: 250px;
 }
-.next_page p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-.next_page :last-child {
-  font-size: 15px;
-}
 
 @media screen and (max-width: 767px) {
   #page_turn {
     height: 390px !important;
+  }
+  .next_page {
+    margin-top: 0;
+    margin-bottom: 150px;
+  }
+  .next_page p {
+    text-align: left;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 768px) {
   .page-wrapper {
     width: 50% !important;
   }
+}
+
+/* もくじ */
+#table_of_contents p {
+  font-size: 26px;
+  letter-spacing: 15px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.circle_1,
+.circle_2 {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #efdad3;
+  text-align: center;
+  font-size: 12px;
+}
+.circle_1 {
+  line-height: 70px;
+}
+.circle_1::before {
+  border-top: 2px dotted #293850;
+  content: "";
+  flex-grow: 2;
+}
+.circle_2 span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 70px;
+  text-align: center;
+}
+.index_list1 li {
+  display: flex;
+  height: 100px;
+  width: 300px;
+  align-items: center;
+}
+.index_list1 li::after {
+  border-top: 2px dotted #293850;
+  content: "";
+  margin-left: 5px;
+  margin-right: 5px;
+  flex-grow: 1;
+}
+.index_list2 li {
+  flex-flow: column;
+  justify-content: space-around;
+  height: 100px;
+  margin-left: 5px;
+}
+#table_of_contents {
+  position: relative;
+  z-index: 1;
+}
+#table_of_contents::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 70%;
+  height: 100%;
+  background: #f7f3f1;
+}
+.contents_inner {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 124px 0;
+  background: #f7f3f1;
+  box-shadow: 5px 0px 9px #e5e5e5;
+  z-index: 2;
+}
+.index_wrap {
+  display: flex;
+  justify-content: center;
+}
+/* ↑ ここまでもくじ */
+
+@media screen and (max-width: 767px) {
+  /* もくじ */
+  .contents_inner {
+    display: block;
+    width: 100%;
+    padding: 60px 0;
+    box-shadow: none;
+  }
+  #table_of_contents p {
+    font-size: 1.5em;
+    letter-spacing: 0;
+  }
+  .circle_1,
+  .circle_2,
+  .circle_2 span {
+    min-width: 100px;
+    height: 1rem;
+    border-radius: 99rem;
+    line-height: 1;
+    padding: 10px 0;
+  }
+  .index_list2 li a br {
+    display: none;
+  }
+  .index_list1 li {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin: 20px 5px 20px 0;
+    padding: 10px 0;
+  }
+  .index_list2 li {
+    height: auto;
+    margin: 20px 0 20px 5px;
+  }
+  .index_wrap {
+    width: 100%;
+    position: relative;
+  }
+  .circle_2 span {
+    position: static;
+    display: inline;
+  }
+  /* ↑ ここまでもくじ */
 }

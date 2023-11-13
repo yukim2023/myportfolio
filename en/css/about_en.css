@@ -65,7 +65,7 @@ h2 img {
     margin: 80px 30px 120px;
   }
   h2 img {
-    width: 70%;
+    width: 80%;
   }
   .myself {
     display: flex;
@@ -77,11 +77,11 @@ h2 img {
     margin: 0;
   }
   #skills {
-    width: 23%;
+    width: 36%;
     min-width: 90px;
   }
   #expertise {
-    width: 32%;
+    width: 50%;
     min-width: 120px;
   }
   .my_name {

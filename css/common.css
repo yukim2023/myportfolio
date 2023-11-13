@@ -51,11 +51,10 @@ img {
   background-color: #e9f1f4;
   height: 60px;
 }
-.header_logo {
-  margin-top: 8px;
-  margin-left: 10px;
-  width: 180px;
+h1 img {
   position: fixed;
+  height: 50px;
+  margin: 5px auto 5px 10px;
 }
 .pc_nav ul {
   height: 60px;
@@ -107,17 +106,6 @@ a {
   opacity: 0.5;
   color: #a6b8c2;
 }
-/*.btn {   動き確認用ボタン
-  display: inline-block;
-  min-width: 300px;
-  margin: 20px;
-  padding: 20px;
-  color: #a6b8c2;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-}*/
 
 /* ↓フッター↓ */
 #footer {
@@ -195,12 +183,12 @@ a {
   opacity: 1;
 }
 
-/*リンクを右下に固定*/
+/*右下に固定*/
 #page-top {
   position: fixed;
   right: 20px;
   z-index: 2;
-  /*はじめは非表示*/
+  /*はじめ非表示*/
   opacity: 0;
   transform: translateY(100px);
 }
@@ -242,14 +230,19 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  #cursor {
+  /*#cursor {
     display: none;
-  }
+  }*/
   .pc_nav {
     display: none;
   }
   .header_wrap {
     height: 76px;
+  }
+  h1 img {
+    position: fixed;
+    height: 50px;
+    margin: 16px auto 10px 10px;
   }
   .main_visual img {
     margin-top: 75px;
@@ -272,19 +265,7 @@ a {
     padding: 20px 0 40px 0;
   }
 
-  #page-top {
-    width: 40px;
-    height: 40px;
-    text-indent: -9999px;
-    opacity: 1;
-    border: none;
-    background: none;
-    bottom: 10px;
-    right: 10px;
-  }
-  #page-top::before {
-    bottom: 0;
-  } /* ↓ ハンバーガーメニュー ↓ */
+  /* ↓ ハンバーガーメニュー ↓ */
   .sp_btn {
     display: block;
     position: fixed;
@@ -395,4 +376,5 @@ a {
     opacity: 1;
     visibility: visible;
   }
+  /* ↑ ここまでハンバーガー ↑ */
 }

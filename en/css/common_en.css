@@ -50,11 +50,10 @@ img {
   background-color: #e9f1f4;
   height: 60px;
 }
-.header_logo {
-  margin-top: 8px;
-  margin-left: 10px;
-  width: 180px;
+h1 img {
   position: fixed;
+  height: 50px;
+  margin: 5px auto 5px 10px;
 }
 .pc_nav ul {
   height: 60px;
@@ -232,6 +231,11 @@ a {
   .header_wrap {
     height: 76px;
   }
+  h1 img {
+    position: fixed;
+    height: 50px;
+    margin: 16px auto 10px 10px;
+  }
   .main_visual img {
     margin-top: 75px;
     display: flex;
@@ -251,12 +255,6 @@ a {
   }
   .copyright {
     padding: 20px 0 40px 0;
-  }
-  .top_arrow {
-    position: fixed;
-    right: 10px;
-    bottom: 340px;
-    width: 20px;
   }
 
   /* ↓ ハンバーガーメニュー ↓ */
@@ -370,6 +368,5 @@ a {
     opacity: 1;
     visibility: visible;
   }
-
   /* ↑ ここまでハンバーガー ↑ */
 }

@@ -1,15 +1,15 @@
 @charset "utf-8";
 
-.catch_copy h2 img {
-  width: 60%;
+.catch_copy img {
+  width: 100%;
 }
 .catch_copy {
   text-align: center;
   margin-top: 200px;
 }
 .main p {
-  text-align: center;
-  font-size: 16px;
+  text-align: left;
+  font-size: 1em;
   line-height: 48px;
   margin: 100px 30px 200px;
 }
@@ -199,9 +199,6 @@ h3 {
   .pc_br {
     display: none; /*改行タグを無効に*/
   }
-  h2 img {
-    width: 90%;
-  }
   .catch_copy {
     margin: 60px auto 30px;
   }
@@ -210,6 +207,7 @@ h3 {
     padding-bottom: 80px;
   }
 
+  /* もくじ */
   .contents_inner {
     display: block;
     padding: 60px 0;
@@ -268,7 +266,7 @@ h3 {
   }
   #services h2 img,
   #workbook h2 img {
-    width: 80%;
+    width: 75%;
   }
   .direction,
   .design,
@@ -321,22 +319,22 @@ h3 {
   margin: 50px auto 0;
 }
 .next_page {
-  width: 100%;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 250px;
-}
-.next_page p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-.next_page :last-child {
-  font-size: 15px;
 }
 
 @media screen and (max-width: 767px) {
   #page_turn {
     height: 390px !important;
+  }
+  .next_page {
+    margin-top: 0;
+    margin-bottom: 150px;
+  }
+  .next_page p {
+    text-align: left;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 768px) {

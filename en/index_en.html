@@ -21,7 +21,7 @@
 
     <header>
         <div class="header_wrap">
-            <h1 class="header_logo"><a href="./index_en.html"><img src="../images/logo@2x.png" alt="logo"></a></h1>
+            <h1><a href="./index_en.html"><img src="../images/logo@2x.png" alt="logo"></a></h1>
             <nav class="pc_nav">
                 <ul>
                     <li><a href="#services">Services</a></li>
@@ -31,11 +31,13 @@
                     <li><a href="../ja/index.html"><img src="../images/globe_ja.png" alt="Swich to Japanese"></a></li>
                 </ul>
             </nav>
+
             <div class="sp_btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+
             <nav class="sp_nav">
                 <ul>
                     <li><a href="#services">Services</a></li>
@@ -51,15 +53,17 @@
 
     <div class="main_visual">
         <picture>
-            <source media="(max-width: 767px)" srcset="../images/top_main_sp.jpg">
+            <source media="(max-width: 767px)" srcset="../images/top_main_sp.webp">
             <img src="../images/top_main.webp" alt="Girl taking photo of sunrise">
         </picture>
     </div>
 
     <div class="main">
         <div class="catch_copy">
-            <h2><img src="../images/top_subject_eng.jpg" alt="What is the message that you want to convey?
-                "></h2>
+            <picture>
+                <source media="(max-width: 767px)" srcset="../images/top_subject_eng_sp.png">
+                <img src="../images/top_subject_eng.jpg" alt="What is the message that you want to convey?">
+            </picture>
         </div>
         <p>It is said that the time it takes a website visitor to decide whether they want to continue viewing the page
             or move on is determined in the first 3 seconds.
@@ -73,22 +77,32 @@
 
     <div id="table_of_contents">
         <div class="contents_inner">
-            <div class="index">
-                <div class="index_heading">Table of contents</div>
-                <ul class="index_list">
-                    <li><span>services</span><a class="circle_1" href="#services">services</a></li>
-                    <li><span>My works</span><a class="circle_2" href="./works_en.html"><span>My <br>works</span></a>
+            <p>Table of contets</p>
+            <div class="index_wrap">
+                <ul class="index_list1">
+                    <li>Services</li>
+                    <li>My works</li>
+                    <li>Skills</li>
+                    <li>Expertise</li>
+                    <li>About me</li>
+                    <li>Enquiries・Contact me</li>
+                </ul>
+                <ul class="index_list2">
+                    <li><a class="circle_1" href="#services">Services</a></li>
+                    <li><a class="circle_2" href="./works_en.html"><span>My <br>works</span></a>
                     </li>
-                    <li><span>Skills</span><a class="circle_1" href="./about_en.html#skills">Skills</a></li>
-                    <li><span>Expertise</span><a class="circle_1" href="./about_en.html#expertise">Expertise</a></li>
-                    <li><span>About me</span><a class="circle_2" href="./about_en.html"><span>About <br>me</span></a>
+                    <li><a class="circle_1" href="./about_en.html#skills">Skills</a></li>
+                    <li><a class="circle_1" href="./about_en.html#expertise">Expertise</a></li>
+                    <li><a class="circle_2" href="./about_en.html"><span>About <br>me</span></a>
                     </li>
-                    <li><span>Enquiries<br>Contact me</span><a class="circle_1" href="./contact_en.html">Contact</a>
+                    <li><a class="circle_1" href="./contact_en.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+
+
 
     <section id="services">
         <h2><img src="../images/service@2x.png" alt="services"></h2>
@@ -221,7 +235,7 @@
                 $('#page_turn').turn(
                     {
                         elevation: 50, // 自動でページをめくったときの高さ
-                        duration: 1000, // ページめくりのスピード(ms)
+                        duration: 3000, // ページめくりのスピード(ms)
                         gradients: false, // ページをめくるときの影->有効
                         autoCenter: false, // 自動中央揃え
                     }

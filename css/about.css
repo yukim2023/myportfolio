@@ -75,12 +75,10 @@ h2 img {
     margin: 0;
   }
   #skills {
-    width: 23%;
-    min-width: 90px;
+    width: 36%;
   }
   #expertise {
-    width: 32%;
-    min-width: 120px;
+    width: 50%;
   }
   .my_name {
     text-align: center;

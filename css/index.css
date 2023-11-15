@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .catch_copy img {
-  width: 70%;
+  width: 65%;
 }
 .catch_copy {
   text-align: center;
@@ -179,19 +179,37 @@ h3 {
   border-left: 7px solid #a6b8c2;
   padding: 0 8px;
 }
+
 #workbook h2 img {
   width: 40%;
   margin: 0 auto;
 }
-#workbook h2,
 #workbook h2 {
   text-align: center;
   margin-top: 200px;
+}
+/* turn js */
+#page_turn {
+  max-width: 1000px;
+  width: 100% !important;
+  height: 500px;
+  margin: 50px auto 0;
+}
+#page_turn p {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 250px;
 }
 
 @media screen and (min-width: 768px) {
   .sp_br {
     display: none; /*改行タグを無効に*/
+  }
+
+  .page-wrapper {
+    /*turn js*/
+    width: 50% !important;
   }
 }
 
@@ -199,12 +217,16 @@ h3 {
   .pc_br {
     display: none; /*改行タグを無効に*/
   }
-  .catch_copy {
-    margin: 60px auto 30px;
+  .catch_copy img {
+    width: 100%;
   }
-  main p {
+  .catch_copy {
+    margin: 60px 30px 0;
+  }
+
+  .main p {
     text-align: left;
-    padding-bottom: 80px;
+    margin: 30px 30px 80px;
   }
 
   /* もくじ */
@@ -260,11 +282,16 @@ h3 {
   .index_list li a br {
     display: none;
   }
+  /* ↑ ここまでもくじ */
 
-  #services h2 {
-    margin: 150px 0 20px;
+  #services h2,
+  #workbook h2 {
+    text-align: center;
+    margin-top: 110px;
   }
-  #services h2 img,
+  #services h2 img {
+    width: 52%;
+  }
   #workbook h2 img {
     width: 75%;
   }
@@ -290,14 +317,26 @@ h3 {
   }
   h3 {
     text-align: center;
-    margin: 50px 0 30px;
+    margin: 18px 0;
     padding: 0;
     border: none;
     font-size: 32px;
   }
   #services p {
     padding: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 15px;
+  }
+  #workbook p {
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 45px;
+  }
+  #workbook {
+    margin-bottom: 200px;
+  }
+  /* turn js */
+  #page_turn {
+    height: 390px !important;
   }
 }
 
@@ -308,37 +347,5 @@ h3 {
   }
   .index_list li > span {
     font-size: 1em;
-  }
-}
-
-/* turn js */
-#page_turn {
-  max-width: 1000px;
-  width: 100% !important;
-  height: 500px;
-  margin: 50px auto 0;
-}
-.next_page {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 250px;
-}
-
-@media screen and (max-width: 767px) {
-  #page_turn {
-    height: 390px !important;
-  }
-  .next_page {
-    margin-top: 0;
-    margin-bottom: 150px;
-  }
-  .next_page p {
-    text-align: left;
-    line-height: 2;
-  }
-}
-@media screen and (min-width: 768px) {
-  .page-wrapper {
-    width: 50% !important;
   }
 }

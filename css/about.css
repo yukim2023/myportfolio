@@ -2,7 +2,7 @@
 
 #about_me {
   max-width: 1000px;
-  margin: 50px 10% 200px;
+  margin: 150px 10% 200px;
 }
 h2 {
   text-align: center;
@@ -60,7 +60,7 @@ h2 img {
 /* レスポンシブ */
 @media screen and (max-width: 767px) {
   #about_me {
-    margin: 80px 30px 120px;
+    margin: 80px 30px 200px;
   }
   h2 img {
     width: 70%;
@@ -76,9 +76,11 @@ h2 img {
   }
   #skills {
     width: 36%;
+    min-width: 90px;
   }
   #expertise {
-    width: 50%;
+    width: 32%;
+    min-width: 120px;
   }
   .my_name {
     text-align: center;

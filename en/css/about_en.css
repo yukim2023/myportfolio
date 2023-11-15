@@ -14,7 +14,7 @@ h2 img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px 0 50px;
+  margin: 150px 0 50px;
 }
 .my_pic {
   width: 40%;
@@ -62,7 +62,7 @@ h2 img {
 /* レスポンシブ */
 @media screen and (max-width: 767px) {
   #about_me {
-    margin: 80px 30px 120px;
+    margin: 80px 30px 200px;
   }
   h2 img {
     width: 80%;

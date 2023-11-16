@@ -2,19 +2,18 @@
 
 #about_me {
   max-width: 1000px;
-  margin: 150px 10% 200px;
+  margin: 150px auto 250px;
 }
 h2 {
   text-align: center;
 }
 h2 img {
-  width: 60%;
+  width: 50%;
 }
 .myself {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 50px 0 50px;
+  margin-top: 100px;
 }
 .my_pic {
   width: 50%;
@@ -32,29 +31,26 @@ h2 img {
   min-width: 90px;
 }
 #expertise {
-  width: 40%;
+  width: 45%;
   min-width: 120px;
+  margin-top: 80px;
 }
 #skills,
 #expertise {
   scroll-margin-top: 120px; /* 位置のズレを修正 */
 }
-
-.my_name {
-  width: 31%;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.my_name,
-.introduction {
-  margin-left: 7%;
-}
 .skills_info p,
 .introduction p {
   font-size: 1em;
   line-height: 2;
-  margin-top: 10px;
-  margin-bottom: 50px;
+}
+.my_name img {
+  width: 40%;
+  margin: 20px 0 auto;
+}
+.my_name,
+.introduction {
+  margin-left: 7%;
 }
 
 /* レスポンシブ */
@@ -63,7 +59,7 @@ h2 img {
     margin: 80px 30px 200px;
   }
   h2 img {
-    width: 70%;
+    width: 75%;
   }
   .myself {
     display: flex;
@@ -74,28 +70,35 @@ h2 img {
     width: 100%;
     margin: 0;
   }
-  #skills {
-    width: 36%;
+  #skills,
+  #expertise {
+    width: 100%;
+  }
+  #skills img {
+    width: 30%;
     min-width: 90px;
   }
-  #expertise {
-    width: 32%;
+  #expertise img {
+    width: 45%;
     min-width: 120px;
   }
-  .my_name {
-    text-align: center;
-    width: 65%;
-    margin: 0 auto;
-    padding-bottom: 50px;
+  #expertise {
+    margin-top: 40px;
   }
+
   .my_pic {
     width: 70%;
-    margin: 0;
+    margin-top: 60px;
+  }
+  .my_name {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+  .my_name img {
+    width: 65%;
   }
   .introduction {
     margin-left: 0;
-  }
-  .introduction p {
-    margin-bottom: 0;
   }
 }

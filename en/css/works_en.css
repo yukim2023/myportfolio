@@ -6,7 +6,6 @@
 #web_page {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 30px;
 }
 h2 {
   text-align: center;
@@ -14,7 +13,6 @@ h2 {
   margin-bottom: 50px;
 }
 .my_works h2 img {
-  margin-bottom: 0;
   width: 50%;
 }
 .category {
@@ -23,15 +21,10 @@ h2 {
   font-weight: lighter;
   margin-bottom: 15px;
 }
-#banner,
-#lp_design,
-#web_page {
-  scroll-margin-top: 80px; /* 位置のズレを修正 */
-}
 .keywords {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .keywords li {
   width: 110px;
@@ -43,12 +36,26 @@ h2 {
   padding-top: 8px;
   margin-right: 10px;
 }
+
+#banner,
+#lp_design,
+#web_page {
+  scroll-margin-top: 80px; /* 位置のズレを修正 */
+}
+#banner,
+#lp_design {
+  padding: 0 30px 180px;
+}
+#web_page {
+  padding: 0 30px 280px;
+}
 h3 {
   font-size: 23px;
   font-weight: bold;
   border-left: 7px solid #a6b8c2;
   padding: 0 8px;
 }
+
 /*ーーーーーー ↓ more 矢印 ↓ ーーーーーー*/
 .more {
   text-align: right;
@@ -92,11 +99,6 @@ h3 {
 .hairsalon,
 .mobile {
   border: 0.5px solid #b3b3b3;
-}
-#banner,
-#lp_design,
-#web_page {
-  margin-bottom: 150px;
 }
 .slider .slick-dots {
   bottom: -50px;
@@ -259,7 +261,7 @@ h3 {
   width: 90%;
 }
 
-/* 閉じるボタン */
+/* モーダル閉じるボタン */
 .modal-close {
   position: absolute;
   top: -15px;
@@ -290,7 +292,6 @@ h3 {
 .modal-close:hover {
   transform: rotate(180deg);
 }
-
 .body {
   overflow: hidden;
 }
@@ -315,12 +316,10 @@ h3 {
     border-top: 3px solid #b3b3b3;
     border-right: 3px solid #b3b3b3;
   }
-
   .modal-control {
     height: auto;
     z-index: 99;
   }
-
   .summary {
     margin: 50px 0 0 12%;
     padding: 0 10px;
@@ -349,10 +348,11 @@ h3 {
   #works {
     max-width: 100%;
     margin: 0 30px;
+    padding: 0;
   }
   #works h2 {
     text-align: center;
-    margin: 150px auto 50px;
+    margin: 135px auto 30px;
   }
   #works h2 img {
     width: 72%;
@@ -362,21 +362,20 @@ h3 {
     flex-wrap: wrap;
     gap: 10px;
   }
-  #banner,
-  #lp_design {
-    margin-bottom: 100px;
-  }
-  #web_page {
-    margin-bottom: 200px;
-  }
+
   .more {
     margin: 30px 0 20px auto;
   }
+
   h3 {
     margin: 0;
   }
-  #works {
-    padding-left: 0;
-    padding-right: 0;
+
+  #banner,
+  #lp_design {
+    padding-bottom: 100px;
+  }
+  #web_page {
+    padding-bottom: 200px;
   }
 }

@@ -75,14 +75,20 @@ h2 img {
     width: 100%;
     margin: 0;
   }
+  #skills,
+  #expertise {
+    width: 100%;
+  }
   #skills img {
-    width: 35%;
+    width: 30%;
     min-width: 90px;
   }
-  #expertise {
-    margin-top: 40px;
+  #expertise img {
     width: 45%;
     min-width: 120px;
+  }
+  #expertise {
+    margin-top: 50px;
   }
 
   .my_pic {

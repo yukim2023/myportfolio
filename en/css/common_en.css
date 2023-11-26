@@ -253,6 +253,9 @@ a {
     margin: 25px auto 40px;
     padding: 20px 0;
   }
+  .contact_button a {
+    font-size: 17px;
+  }
   .copyright {
     padding: 20px 0 40px 0;
   }

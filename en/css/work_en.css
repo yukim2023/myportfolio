@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#works,
+#work,
 #banner,
 #lp_design,
 #web_page {
@@ -12,7 +12,7 @@ h2 {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-.my_works h2 img {
+.my_work h2 img {
   width: 50%;
 }
 .category {
@@ -345,16 +345,16 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
-  #works {
+  #work {
     max-width: 100%;
     margin: 0 30px;
     padding: 0;
   }
-  #works h2 {
+  #work h2 {
     text-align: center;
     margin: 135px auto 30px;
   }
-  #works h2 img {
+  #work h2 img {
     width: 72%;
   }
   .keywords {

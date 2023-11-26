@@ -23,7 +23,7 @@
             <nav class="pc_nav">
                 <ul>
                     <li><a href="./index_en.html#services">Services</a></li>
-                    <li><a href="./works_en.html">Works</a></li>
+                    <li><a href="./work_en.html">My work</a></li>
                     <li><a href="./about_en.html">About me</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="../ja/contact.html"><img src="../images/globe_ja.png" alt="Switch to Japanese"></a>
@@ -38,7 +38,7 @@
             <nav class="sp_nav">
                 <ul>
                     <li><a href="./index_en.html#services">Servics</a></li>
-                    <li><a href="./works_en.html">Works</a></li>
+                    <li><a href="./work_en.html">My work</a></li>
                     <li><a href="./about_en.html">About me</a></li>
                     <li><a href="./contact_en.html#contact_form">Contact</a></li>
                     <li><a href="../ja/contact.html"><img src="../images/globe_sp.png" alt="Switch to Japanese"></a>
@@ -62,11 +62,9 @@
         <div id="contact_form">
             <h2><img src="../images/contact@2x.png" alt="Inquiry form"></h2>
         </div>
-        <main>
-            <p class="info">For inquiries or requests regarding design, please contact me using the inquiry form below.
-                I will reply to you within 3 business days.
-            </p>
-        </main>
+
+        <p class="info">For inquiries or requests regarding design, please contact me using the inquiry form below.
+            I will reply to you within 3 business days.</p>
 
         <div class="c-form">
             <div class="c-form__item">
@@ -84,8 +82,7 @@
             </div>
             <div class="c-form__item">
                 <label class="c-form__label" for="field_company">Company name</label>
-                <input name="entry.1154542603" class="c-form__input" id="field_company" placeholder="" type="text"
-                    required="required" />
+                <input name="entry.1154542603" class="c-form__input" id="field_company" placeholder="" type="text" />
             </div>
             <div class="c-form__item">
                 <label class="c-form__label" for="field_name"><span class="c-form__required">Required</span>Name</label>
@@ -100,8 +97,7 @@
             </div>
             <div class="c-form__item">
                 <label class="c-form__label" for="field_title">Title</label>
-                <input name="entry.2056611244" class="c-form__input" id="field_title" placeholder="" type="text"
-                    required="required" />
+                <input name="entry.2056611244" class="c-form__input" id="field_title" placeholder="" type="text" />
             </div>
             <div class="c-form__item">
                 <label class="c-form__label" for="field_message"><span
@@ -125,18 +121,23 @@
             <a href="./contact_en.html"><img src="../images/airplane@2x.png" alt="Contact button"></a>
             <a href="./contact_en.html">Contact me!</a>
         </div>
+        <!--
         <img class="instaglam_icon" src="../images/instaglam@2x.png" alt="Instagram app icon">
+    -->
         <p class="copyright"><small>&copy;Yuki Kimber Portfolio</small></p>
         <p id="page-top"><a href="#">Page Top</a></p>
     </footer>
 
-    <script>
-        var submitted = false;
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script> var submitted = false;</script>
+
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='thanks.html';}"></iframe>
+        onload="if(submitted){window.location='thanks_en.html';}"></iframe>
 
     <script src="../js/script.js"></script>
+
 </body>
 
 </html>
